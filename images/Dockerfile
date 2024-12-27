@@ -9,4 +9,4 @@ FROM docker.io/alpine:3.21
 RUN mkdir /opt/bin/
 COPY --from=builder /build/wg-roaming /opt/bin/
 
-ENTRYPOINT "/opt/bin/wg-roaming"
+ENTRYPOINT ["/opt/bin/wg-roaming"]
