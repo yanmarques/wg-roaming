@@ -1,6 +1,6 @@
 name: build latest wg-roaming and upload docker image
   
-on: [push]
+on: [push, workflow_dispatch]
 
 env:
   GO_VERSION: "1.23"
